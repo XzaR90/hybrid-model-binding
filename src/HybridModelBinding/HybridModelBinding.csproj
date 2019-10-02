@@ -2,7 +2,7 @@
     <PropertyGroup>
         <Description>Provides the ability to bind models using both ModelBinder and ValueProvider in ASP.NET Core.</Description>
         <Authors>Bill Boga</Authors>
-        <TargetFrameworks>netstandard2.0;net451</TargetFrameworks>
+        <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
         <AssemblyName>HybridModelBinding</AssemblyName>
         <PackageId>HybridModelBinding</PackageId>
         <PackageTags>hybrid;modelbinder;valueprovider;asp.net core;mvc</PackageTags>
@@ -12,15 +12,9 @@
         <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
         <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.15.0</Version>
+        <Version>3.0.0</Version>
     </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.1.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.1" />
-    </ItemGroup>
-    <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="1.1.8" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="1.1.8" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.1" />
-    </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 </Project>
