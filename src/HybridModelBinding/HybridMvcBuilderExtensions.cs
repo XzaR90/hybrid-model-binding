@@ -2,12 +2,7 @@ using System;
 using HybridModelBinding;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-
-#if NET451
-using Microsoft.AspNetCore.Mvc.Internal;
-#else
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-#endif
 
 namespace Microsoft.Extensions.DependencyInjection
 {
